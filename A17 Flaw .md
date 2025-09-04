@@ -62,6 +62,7 @@ These logs confirm:
 * The shared I2C4 line is failing at the physical or logical level.
 
 ---
+**Log Evidence**: https://ia600206.us.archive.org/1/items/a-17-flaw-log-evidence/A17%20Flaw%20Log%20evidence%20.mov
 
 ## Root Cause Analysis
 
