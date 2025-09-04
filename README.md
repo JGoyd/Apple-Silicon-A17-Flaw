@@ -4,7 +4,7 @@
 
 This report documents a critical silicon-level hardware flaw in Apple’s **A17 Pro (D84AP)** chip used in the **iPhone 15 Pro Max**. The flaw involves a **shared I2C4 bus** connecting both the **Secure Enclave Processor (SPU)** and the **digitizer controller**. If the shared bus experiences electrical degradation or instability, both systems fail simultaneously—leading to complete device failure.
 
-This condition causes the device to become **unbootable**, **unresponsive to touch**, and permanently inoperable, even under production firmware with no physical damage or tampering.
+This condition causes the device to temporarily enter an unstable state, where the Secure Enclave fails to initialize and the digitizer reports invalid data. Although the device recovers and remains operable, the associated rose log pruning during failure clears most traces before diagnostic data can be captured.
 
 ---
 
@@ -63,7 +63,7 @@ IOHIDEventDriver: Invalid digitizer transducer
 
 ### Immediate Actions
 
-* Flag affected units for hardware recall and root-cause analysis.
+* Affected units should be flagged internally for analysis, and hardware recall may be necessary depending on production impact.
 * Conduct I2C4 electrical integrity tests on production samples.
 * Isolate hardware-level fault signatures using sysdiagnose and serial logging.
 
@@ -74,6 +74,8 @@ IOHIDEventDriver: Invalid digitizer transducer
 * Implement early hardware-level fault detection in SecureROM to handle I2C bus failures more gracefully.
 
 ---
+
+**Foresnic note:** During failures, rose logging rotates and prunes entries, potentially erasing forensic traces of the incident. This creates a blind spot for post-mortem analysis.
 
 ## Conclusion
 
