@@ -1,4 +1,4 @@
-# A17 Chip Hardware Flaw: Shared I2C Bus Between Secure Enclave and Digitizer Causes Critical Device Failure
+# A17 Pro Chip Hardware Flaw: Shared I2C Bus Between Secure Enclave and Digitizer Causes Critical Device Failure
 
 ## Overview
 
