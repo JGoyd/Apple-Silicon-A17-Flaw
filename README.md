@@ -15,7 +15,7 @@ This condition causes the device to become **unbootable**, **unresponsive to tou
 * **iBoot Version:** 11881.80.57
 * **iOS Version:** 18.3 Beta (22D5055b)
 * **Issue Type:** Hardware-level design flaw (shared I2C4 bus)
-* **Discovery Date:** January 21, 2025
+* **Discovery Date:** September 3, 2025
 * **Status:** Confirmed in production hardware; unrecoverable via software
 
 ---
