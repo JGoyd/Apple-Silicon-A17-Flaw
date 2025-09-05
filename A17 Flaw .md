@@ -20,7 +20,6 @@ When I2C4 is electrically degraded or faulted:
 * EEPROM communication fails, halting biometric and cryptographic services
 * The digitizer controller returns invalid data
 * Gesture recognition and input stack fail to initialize
-* The device becomes **non-functional**, despite being on production firmware and hardware
 
 This is an **unrecoverable architectural failure** with no available software-based remediation. The flaw was observed and replicated on **a production iPhone 15 Pro Max** with no evidence of external tampering or damage.
 
@@ -35,7 +34,7 @@ This issue occurs reliably following a hardware-level power dropout scenario:
 3. Power on the device via USB while capturing serial console logs (e.g., via PurpleRestore or Lightning debug).
 
 **Result:**
-Device fails to boot normally. SPU does not progress past SecureROM. Digitizer subsystem fails to initialize. Biometric and touch input become non-functional. Console logs confirm early hardware-level failures in SPU and digitizer subsystems.
+Device fails to boot normally. SPU does not progress past SecureROM. Digitizer subsystem fails to initialize. Console logs confirm early hardware-level failures in SPU and digitizer subsystems.
 
 ---
 
