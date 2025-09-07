@@ -1,11 +1,9 @@
 # Shared I2C Bus Design Flaw in A17 Pro Causes SPU Lockup and Digitizer Failure (iPhone 15 Pro Max)
 
-**Device:** iPhone 15 Pro Max
 **Chipset:** A17 Pro (D84AP, TSMC 3nm)
 **iBoot Version:** 11881.80.57
-**iOS Version:** iOS 18.3 Beta (22D5055b)
 **Report Type:** Hardware Flaw – Shared I2C Bus (SPU + Digitizer)
-**Finding Date:** January 21, 2025
+**Finding Date:** September 2, 2025
 **Status:** Confirmed in production; unrecoverable via software
 
 ---
@@ -34,7 +32,7 @@ This issue occurs reliably following a hardware-level power dropout scenario:
 3. Power on the device via USB while capturing serial console logs (e.g., via PurpleRestore or Lightning debug).
 
 **Result:**
-Device fails to boot normally. SPU does not progress past SecureROM. Digitizer subsystem fails to initialize. Console logs confirm early hardware-level failures in SPU and digitizer subsystems.
+Device fails to boot normally. SPU does not progress past SecureROM. Digitizer subsystem fails to initialize. Biometric and touch input become non-functional. Console logs confirm early hardware-level failures in SPU and digitizer subsystems.
 
 ---
 
@@ -61,7 +59,6 @@ These logs confirm:
 * The shared I2C4 line is failing at the physical or logical level.
 
 ---
-**Log Evidence**: https://ia600206.us.archive.org/1/items/a-17-flaw-log-evidence/A17%20Flaw%20Log%20evidence%20.mov
 
 ## Root Cause Analysis
 
@@ -117,7 +114,7 @@ This issue should be escalated as a **Level-1 hardware defect** in A17 Pro (D84A
 
 ## Conclusion
 
-This report documents a **high-severity, unpatchable silicon flaw** in Apple’s A17 Pro chipset. A shared, non-redundant I2C4 bus connects the Secure Enclave and digitizer controller, creating a critical failure domain that renders devices **inoperable and insecure** upon bus degradation.
+This report documents a **high-severity, unpatchable silicon flaw** in Apple’s A17 Pro chipset. A shared, non-redundant I2C4 bus connects the Secure Enclave and digitizer controller, creating a critical failure domain that renders devices **insecure** upon bus degradation.
 
 The flaw is:
 
