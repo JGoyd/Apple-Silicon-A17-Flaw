@@ -57,11 +57,6 @@ IOHIDEventDriver: Invalid digitizer transducer
 4. **Advise high-risk customers** (defense/finance/LE) on possible **attestation gaps** and **evidence loss**; update handling SOPs.
 5. **Open focused FA track** on **I²C4 signal integrity** (impedance, pull-ups, routing/noise tolerance, isolation).
 
-## Medium-term mitigations (30–90 days)
-
-* **Fleet posture:** Tag affected models; enforce conditional access when **SPU readiness** cannot be proven.
-* **Capture pipeline:** Add **pre-OS/BootROM hooks** in lab tooling; auto-export serial traces for suspected I²C anomalies.
-* **Custody SOP:** Treat “ghost bricks” as **security-relevant** incidents, not merely reliability blips.
 
 ## Engineering recommendations (roadmap)
 
