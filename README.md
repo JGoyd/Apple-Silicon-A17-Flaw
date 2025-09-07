@@ -6,8 +6,9 @@ This report documents a critical silicon-level hardware flaw in Apple’s **A17 
 
 During testing, the device temporarily entered an **unstable state**, where the Secure Enclave failed to initialize and the digitizer reported invalid data. Although the device recovered and remained operable, the associated **rose log pruning during failure** cleared most traces before diagnostic data could be captured.
 
-**Log Evidence**: [
-](https://archive.org/details/a-17-flaw-log-evidence)---
+**Log Evidence**: https://archive.org/details/a-17-flaw-log-evidence
+
+---
 
 ## Technical Summary
 
