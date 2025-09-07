@@ -51,6 +51,8 @@ IOHIDEventDriver: Invalid digitizer transducer
 AppleSphinxProxHIDEventDriver: Invalid digitizer transducer
 ```
 
+Log video: https://archive.org/details/a-17-flaw-log-evidence
+
 These logs confirm:
 
 * The SPU is stuck in SecureROM due to EEPROM read failure.
