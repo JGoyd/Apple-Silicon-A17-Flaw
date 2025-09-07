@@ -1,9 +1,13 @@
 # Shared I2C Bus Design Flaw in A17 Pro Causes SPU Lockup and Digitizer Failure (iPhone 15 Pro Max)
 
 **Chipset:** A17 Pro (D84AP, TSMC 3nm)
+
 **iBoot Version:** 11881.80.57
+
 **Report Type:** Hardware Flaw – Shared I2C Bus (SPU + Digitizer)
-**Finding Date:** September 2, 2025
+
+**Finding Date:** September 3, 2025
+
 **Status:** Confirmed in production; unrecoverable via software
 
 ---
