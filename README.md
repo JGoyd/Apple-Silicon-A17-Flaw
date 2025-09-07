@@ -1,4 +1,5 @@
-# A17 Pro Chip Hardware Flaw: Shared I²C Bus Between Secure Enclave and Digitizer Causes Critical System Instability
+# A17 Pro Chip: I²C Glitch on Shared Bus Bypasses Debug Fuse, Enabling Unauthorized Access on Production Devices
+
 
 ## Overview
 
