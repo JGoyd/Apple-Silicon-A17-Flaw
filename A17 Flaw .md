@@ -39,7 +39,7 @@ No active testing was performed. The issue was discovered by analyzing boot logs
 
 ## Proof of Concept
 
-The following logs were captured via serial and system interfaces from the affected device running iBoot 11881.80.57 and iOS 18.3 beta:
+The following logs were captured via serial and system interfaces from the affected device running iBoot 11881.80.57:
 
 ```log
 aoprose: PRRose::setStateFromUnknownToHost: FWState::SecureROM
