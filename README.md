@@ -68,8 +68,10 @@ For Platform Security:
 * Awaiting triage or feedback
 * This repository is intended for research transparency, peer review, and responsible disclosure coordination
 
+## Why This Matters
+
+The Secure Enclave is the last line of defense for iPhone security. If it fails silently, the phone still works... but encryption, biometrics, and data protection are gone without warning. A single hardware fault turns a flagship device into an insecure one, with no way for the user to know or recover.
 
 
 
--- Joseph Goydish II
 
