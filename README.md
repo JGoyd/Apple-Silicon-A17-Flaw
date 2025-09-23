@@ -31,22 +31,7 @@ Impact:
 * Data protection silently bypassed
 * No user-visible indication of degraded security posture
 
-## Proof of Concept
 
-Captured logs from affected hardware confirm SPU and digitizer failure, as well as fallback behavior in key services:
-
-```
-aoprose: PRRose::setStateFromUnknownToHost: FWState::SecureROM
-AppleSPU::_handleReadyReport, serviceName (arc-eeprom-i2c)
-Couldn't alloc class "AppleSPULogDriver"
-Couldn't alloc class "AppleSPUGestureDriver"
-RawI2C slave presence test: 6265
-_enableControlI2C currentControlReg = 0x60
-IOHIDEventDriver: Invalid digitizer transducer
-AppleSphinxProxHIDEventDriver: Invalid digitizer transducer
-```
-
-Additional system logs reveal cryptographic fallback and loss of encryption enforcement:
 
 ```
 CommCenter: Bootstrapping EncryptedIdentityManagement
