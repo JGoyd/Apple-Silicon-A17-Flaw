@@ -77,7 +77,7 @@ The firmware reacts to this glitch by loading the T8122 Zombie Kernel, which rec
 
 ```
 
-**Technical Analysis:** The `bypass-15` property proves the **Hardware Memory Firewall is DISABLED**. This provides a **DMA Attack Vector**, allowing for kernel memory exfiltration as a direct consequence of the UKC policy shift.
+**Technical Analysis:** The `bypass-15` property proves the **Hardware Memory Firewall is DISABLED**. This provides a **DMA Attack Vector**, allowing for kernel memory exfiltration. 
 
 ---
 
