@@ -6,7 +6,7 @@
 
 **Vulnerability Class:** Microarchitectural Logic Trapdoor / Silent Security Downgrade
 
-**Forensic Status:** **CONFIRMED** via UKC Policy Audit, ACE Debug Lockout, and DART Bypass.
+**Forensic Status:** **CONFIRMED** ACE Debug Lockout, and DART Bypass.
 
 ---
 
