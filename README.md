@@ -1,6 +1,6 @@
-# Project Overview: A17 Pro "I2C4 Zombie" Silicon Defect
+# Project Overview: A17 Pro I2C4 Silicon Defect
 
-This repository contains forensic documentation and proof-of-concept materials regarding a hardware-level vulnerability in the **Apple A17 Pro (T8130) SoC**. The defect involves a microarchitectural logic trapdoor where an **I2C4 bus failure** triggers an unauthorized platform security demotion to a "Zombie" state.
+This repository contains forensic documentation and proof-of-concept materials regarding a hardware-level vulnerability in the **Apple A17 Pro (T8130) SoC**. The defect involves a logic flaw where an **I2C4 bus failure** triggers an unauthorized platform security demotion to a fallback state.
 
 ---
 
@@ -29,7 +29,7 @@ The vulnerability stems from a shared dependency between the **Secure Enclave Pr
 
 ## Forensic Significance
 
-This repository provides evidence that the "Zombie" state is not a random crash but a programmed architectural response. The existence of the `bypass-15` property in production silicon indicates a significant security oversight where availability is prioritized over data integrity.
+This repository provides evidence that the fallback state is not a random crash but a programmed architectural response. The existence of the `bypass-15` property in production silicon indicates a significant security oversight where availability is prioritized over data integrity.
 
 ---
 
