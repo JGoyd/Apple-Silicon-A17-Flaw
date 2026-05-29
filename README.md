@@ -1,5 +1,8 @@
 # Project Overview: A17 Pro I2C4 Silicon Defect
 
+**[Status: Research Ongoing]**
+
+
 This repository contains forensic documentation and proof-of-concept materials regarding a hardware-level vulnerability in the **Apple A17 Pro (T8130) SoC**. The defect involves a logic flaw where an **I2C4 bus failure** triggers an unauthorized platform security demotion to a fallback state.
 
 ---
